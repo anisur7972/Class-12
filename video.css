@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Menu CSS Start  */
+
+.header-section{
+    background-color: #3498db;
+}
+.header-section ul{
+    text-align: center;
+}
+.header-section ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-section ul li:first-child{
+    border-left: 1px solid #ddd;
+}
+.header-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 21px;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    border-right: 1px solid #ddd;
+    transition: .4s;
+}
+.header-section ul li:hover > a{
+    background-color: #2980b9;
+}
+/* Header Menu CSS End */
+
+/* Dropdown  Menu Css Start  */
+.header-section ul li{
+    position: relative;
+}
+.header-section ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3498db;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header-section ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header-section ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.header-section ul li ul li a{
+    display: block;
+    border-top: 1px solid #ddd;
+}
+.header-section ul li ul li:last-child{
+    border-bottom: 1px solid #ddd;
+}
+
+/* Dropdown  Menu Css End  */
+
+/* Social Menu Csss Start  */
+section.social-menu {
+    margin-top: 350px;
+    background-color: #000;
+}
+.social-menu ul{
+    list-style-type: none;
+    text-align: center;
+}
+.social-menu ul li{
+    display: inline-block;
+    padding: 15px 15px;
+}
+.social-menu ul li a{
+    display: inline-block;
+    background-color: lightblue;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    font-size: 25px;
+   color: rgba(255,0,0,.6);
+   transition: .4s;
+}
+
+.social-menu ul li a:hover{
+    color: green;
+    background-color: #fff;
+}
+/* Social Menu Csss End */
+
